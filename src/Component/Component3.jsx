@@ -1,10 +1,10 @@
-import React from "react";
+import { React, forwardRef } from "react";
 import Card3 from "./Card3";
 
-const Component3 = () => {
+const Component3 = forwardRef((props, ref) => {
   return (
     <>
-      <div className="h-32 mt-60">
+      <div ref={ref} className="h-32 mt-60">
         <h1 className="text-center text-5xl font-bold text-white">
           Pricing Plan
         </h1>
@@ -44,6 +44,6 @@ const Component3 = () => {
       </div>
     </>
   );
-};
+});
 
 export default Component3;

@@ -1,7 +1,13 @@
-import React from "react";
+import { React, useRef } from "react";
 import dot from "./dot-img.svg";
 
-const Component5 = () => {
+const Component5 = ({ resultRef }) => {
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    // e.preventDefault();
+    resultRef.current.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <div
@@ -18,7 +24,10 @@ const Component5 = () => {
         {/* <p className="text-xl">Take the 3 day free trial</p> */}
 
         <p className="text-xl text-white">5 minutes or less setup</p>
-        <button className="mr-4 text-white bg-violet-600 hover:bg-violet-500 rounded-full px-6 py-3">
+        <button
+          onClick={handleClick}
+          className="mr-4 text-white bg-violet-600 hover:bg-violet-500 rounded-full px-6 py-3"
+        >
           Plan Selection
         </button>
       </div>
