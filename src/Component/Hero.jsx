@@ -1,31 +1,47 @@
-import React from "react";
+import { React, useRef } from "react";
 import video from "./video.mp4";
+import dot from "./dot-img.svg";
 function Hero() {
+  const ref = useRef(null);
+
+  const handleClick = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
-      <div className="text-center mt-36 w-full">
-        <h1 className="text-5xl w-[750px] ml-80 font-bold text-violet-400">
-          Loom Genie: Unleash Your Loom Magic!
-        </h1>
-        <h1 className="mt-5 text-xl w-1/2 text-center ml-80">
-          Capture attention, simplify recording, and create captivating videos
-          effortlessly with Loom Genie. Elevate your communication game today!
-        </h1>
-        <button className=" mt-9  bg-violet-600 rounded-full px-6 py-3   text-white text-xl">
+      <div
+        style={{
+          backgroundImage: `url(${dot})`,
+          color: "#181b20",
+        }}
+        className=" pb-28 pt-10 flex flex-col justify-center items-center"
+      >
+        <button
+          onClick={() => handleClick(ref)}
+          className="bg-violet-600 hover:bg-violet-500 text-center rounded-full px-6 py-3 text-white text-lg"
+        >
           Plan Selection
         </button>
-      </div>
-      <div className="w-2/3 ml-60 mt-20">
-        <div className="aspect-w-16 aspect-h-9 ">
-          {/* <video src={video} controls="0" autoplay="autoplay"></video> */}
-          <iframe
-            className="rounded-2xl"
-            src={video}
-            frameBorder="1"
-            allow="autoplay;fullScreen;encrypted-media"
-            allowFullScreen
-            controls={false}
-          ></iframe>
+
+        <div
+          style={{ boxShadow: "0 80px 150px -50px #7c3aed" }}
+          className="w-2/3 mt-20 rounded-2xl"
+        >
+          <div ref={ref} className="aspect-w-16 aspect-h-9 rounded-2xl ">
+            {/* <video src={video} controls="0" autoplay="autoplay"></video> */}
+            <iframe
+              className="rounded-2xl"
+              src={video}
+              frameBorder="1"
+              allow="autoplay;fullScreen;encrypted-media"
+              allowFullScreen
+              controls={false}
+            ></iframe>
+          </div>
         </div>
       </div>
     </>

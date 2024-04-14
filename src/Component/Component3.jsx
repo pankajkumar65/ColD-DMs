@@ -4,28 +4,30 @@ import Card3 from "./Card3";
 const Component3 = () => {
   return (
     <>
-      <div className="h-32 mt-44">
-        <h1 className="text-center text-5xl font-bold">Pricing Plan</h1>
+      <div className="h-32 mt-60">
+        <h1 className="text-center text-5xl font-bold text-white">
+          Pricing Plan
+        </h1>
       </div>
-      <div className="flex flex-row justify-center items-center gap-7">
+      <div className="flex flex-row justify-center items-center gap-7 ">
         <Card3
-          title={"Pro plan"}
+          title={"Small plan"}
           para={
             "Perfect for businesses that want to give Instagram outreach a try."
           }
-          price={"$99/mo"}
-          buttonText={"3 day free trail"}
+          price={"$9+VAT/monthly"}
+          buttonText={"Buy"}
           msg1={"50-70+ messages per day"}
           msg2={"1 IG account"}
           msg3={"Guaranteed client or refund"}
         />
         <Card3
-          title={"Scale plan"}
+          title={"Medium plan"}
           para={
             "The plan for businesses that want to scale as fast as possible."
           }
-          price={"$174/mo"}
-          buttonText={"3 day free trail"}
+          price={"$15 + VAT/monthly"}
+          buttonText={"Buy"}
           msg1={"1000s of messages per day"}
           msg2={"Up to 50 IG accounts"}
           msg3={"Scale up your outreach"}

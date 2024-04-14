@@ -1,17 +1,17 @@
 import React from "react";
 import Card2 from "./Card2";
-import minLogo1 from "./minLogo1.png";
-import minLogo2 from "./minLogo2.png";
-import minLogo3 from "./minLogo3.png";
-import minLogo4 from "./minLogo4.png";
-import minLogo5 from "./minLogo5.png";
-import minLogo6 from "./minLogo6.png";
+import minLogo1 from "./minLogo1.svg";
+import minLogo2 from "./minLogo2.svg";
+import minLogo3 from "./minLogo3.svg";
+import minLogo4 from "./minLogo4.svg";
+import minLogo5 from "./minLogo5.svg";
+import minLogo6 from "./minLogo6.svg";
 
 const Component2 = () => {
   return (
     <>
-      <div className=" flex justify-center items-center mt-44 mb-20">
-        <h1 className="text-center w-1/2 font-bold text-5xl">
+      <div className=" flex justify-center items-center mt-60 mb-20">
+        <h1 className="text-center w-1/2 font-bold text-5xl text-white">
           Get Better Results With Benefits
         </h1>
       </div>

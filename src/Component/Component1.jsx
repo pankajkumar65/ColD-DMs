@@ -7,10 +7,10 @@ import Card1 from "./Card1";
 function Component1() {
   return (
     <>
-      <div className="mt-60 mb-20">
+      <div className="mt-32 mb-20 text-white">
         <h1 className="text-center font-bold text-5xl">How It Works</h1>
       </div>
-      <div className="flex justify-around w-full mt-10 px-10">
+      <div className="flex justify-around w-full mt-10 px-10 text-white">
         <Card1
           img={logo_1}
           title={"Create Your Account"}

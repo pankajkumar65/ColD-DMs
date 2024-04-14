@@ -10,15 +10,27 @@ const Component4 = () => {
 
   return (
     <>
-      <div className="h-32 mt-44">
-        <h1 className="text-center text-5xl font-bold">FAQs</h1>
+      <div className="h-32 mt-60 ">
+        <h1 className="text-center text-5xl font-bold text-white">FAQs</h1>
       </div>
-      <div className="w-full flex gap-3 flex-col justify-center items-center pb-20">
-        <Card4 />
-        <Card4 />
-        <Card4 />
-        <Card4 />
-        <Card4 />
+      <div className="w-full flex gap-3 flex-col justify-center items-center pb-20 ">
+        <Card4 question={"Are the prices monthly?"} answer={"Yes."} />
+        <Card4
+          question={"Is there a plan with unlimited credits?"}
+          answer={"Please contact us for that."}
+        />
+        <Card4
+          question={"Do I need loom premium to use Loom Genie?"}
+          answer={
+            "Yes you need a loom premimum account to properly use Loom Genie."
+          }
+        />
+        <Card4
+          question={"Is there any competitor toolon the market?"}
+          answer={
+            "No. Loom Genie is unique to its kind and the only Loom automation tool out there."
+          }
+        />
       </div>
 
       {/* <div className="flex flex-col justify-center items-center">
