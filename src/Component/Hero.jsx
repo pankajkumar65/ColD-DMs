@@ -1,12 +1,10 @@
 import { React, useRef } from "react";
-import video from "./video.mp4";
-import dot from "./dot-img.svg";
+import video from "/video/video.mp4";
+import dot from "./Images/dot-img.svg";
 
 function Hero({ resultRef }) {
-  const ref = useRef(null);
-
-  const handleClick = () => {
-    // e.preventDefault();
+  const handleClick = (e) => {
+    e.preventDefault();
     resultRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -38,7 +36,7 @@ function Hero({ resultRef }) {
               frameBorder="1"
               allow="autoplay;fullScreen;encrypted-media"
               allowFullScreen
-              controls={false}
+              controls={true}
             ></iframe>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { React, useRef } from "react";
-import dot from "./dot-img.svg";
+import dot from "./Images/dot-img.svg";
 
 const Component5 = ({ resultRef }) => {
   const ref = useRef(null);

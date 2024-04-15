@@ -1,7 +1,4 @@
 import React from "react";
-import logo_1 from "./logo_1.png";
-import logo_2 from "./Logo_2.png";
-import logo_3 from "./Logo_3.png";
 
 const Card1 = ({ img, title, para }) => {
   return (

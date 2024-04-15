@@ -1,7 +1,7 @@
 import React from "react";
-import logo_1 from "./logo_1.svg";
-import logo_2 from "./logo_2.svg";
-import logo_3 from "./Logo_3.svg";
+import logo_1 from "./Images/logo_1.svg";
+import logo_2 from "./Images/logo_2.svg";
+import logo_3 from "./Images/Logo_3.svg";
 import Card1 from "./Card1";
 
 function Component1() {

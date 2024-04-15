@@ -6,7 +6,7 @@ const Component3 = forwardRef((props, ref) => {
     <>
       <div ref={ref} className="h-32 mt-60">
         <h1 className="text-center text-5xl font-bold text-white">
-          Pricing Plan
+          Pricing & Plan
         </h1>
       </div>
       <div className="flex flex-row justify-center items-center gap-7 ">

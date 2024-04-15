@@ -1,5 +1,5 @@
 import React from "react";
-import mainLogo from "./mainLogo.webp";
+import mainLogo from "./Images/mainLogo.webp";
 
 function Navbar() {
   return (

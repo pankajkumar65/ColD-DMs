@@ -1,11 +1,11 @@
 import React from "react";
 import Card2 from "./Card2";
-import minLogo1 from "./minLogo1.svg";
-import minLogo2 from "./minLogo2.svg";
-import minLogo3 from "./minLogo3.svg";
-import minLogo4 from "./minLogo4.svg";
-import minLogo5 from "./minLogo5.svg";
-import minLogo6 from "./minLogo6.svg";
+import minLogo1 from "./Images/minLogo1.svg";
+import minLogo2 from "./Images/minLogo2.svg";
+import minLogo3 from "./Images/minLogo3.svg";
+import minLogo4 from "./Images/minLogo4.svg";
+import minLogo5 from "./Images/minLogo5.svg";
+import minLogo6 from "./Images/minLogo6.svg";
 
 const Component2 = () => {
   return (
