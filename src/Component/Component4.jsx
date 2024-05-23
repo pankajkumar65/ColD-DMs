@@ -33,23 +33,25 @@ const Component4 = () => {
         />
       </div>
 
-      {/* <div className="flex flex-col justify-center items-center">
-        <h1 className=" mb-3 text-4xl text-center font-bold text-gray-800">
+      <div className="flex flex-col justify-center items-center">
+        <h1 className=" mb-3 text-4xl text-center font-bold text-white">
           Still have questions?
         </h1>
-        <p className="text-xl">Send us an email or text us anytime</p>
+        <p className="text-xl text-white">
+          Send us an email or text us anytime
+        </p>
         <div className="flex flex-row justify-center items-center gap-5">
-          <button className="mt-6 border border-white rounded-full px-6 py-3 bg-black text-white">
+          <button className="mt-6 border border-white rounded-full px-6 py-3 bg-violet-600 text-white">
             Email Us
           </button>
-          <button className="mt-6 border border-black rounded-full px-6 py-3 bg-black text-white">
+          <button className="mt-6 border rounded-full px-6 py-3  bg-violet-600 text-white">
             Telegram
           </button>
-          <button className="mt-6 border border-black rounded-full px-6 py-3 bg-black text-white">
+          <button className="mt-6 border  rounded-full px-6 py-3 bg-violet-600 text-white">
             WhatsApp
           </button>
-        </div> */}
-      {/* </div> */}
+        </div>
+      </div>
     </>
   );
 };
